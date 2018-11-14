@@ -8,112 +8,112 @@ import javafx.scene.control.TextField;
 
 public class Controller {
     @FXML
-    private Button jedan;
+    private Button btn1;
     @FXML
-    private Button dva;
+    private Button btn2;
     @FXML
-    private Button tri;
+    private Button btn3;
     @FXML
-    private Button cetiri;
+    private Button btn4;
     @FXML
-    private Button pet;
+    private Button btn5;
     @FXML
-    private Button sest;
+    private Button btn6;
     @FXML
-    private Button sedam;
+    private Button btn7;
     @FXML
-    private Button osam;
+    private Button btn8;
     @FXML
-    private Button devet;
+    private Button btn9;
     @FXML
-    private Button nula;
+    private Button btn0;
     @FXML
-    private Button mod;
+    private Button modBtn;
     @FXML
-    private Button puta;
+    private Button timesBtn;
     @FXML
-    private Button plus;
+    private Button plusBtn;
     @FXML
-    private Button minus;
+    private Button minusBtn;
     @FXML
-    private Button podijeljeno;
+    private Button divideBtn;
     @FXML
-    private Button tacka;
+    private Button dotBtn;
     @FXML
-    private Button jednako;
+    private Button equalsBtn;
     @FXML
     private TextField display;
     private Float rezultat = 0f;
     private int operacija = -1;
     @FXML
     void handleButtonAction(ActionEvent event){
-        if(event.getSource() == jedan){
+        if(event.getSource() == btn1){
             if(operacija == 0) {
                 display.setText("");
                 operacija = -1;
             }
             display.setText(display.getText() + "1" );
-        }else if(event.getSource() == dva){
+        }else if(event.getSource() == btn2){
             if(operacija == 0) {
                 display.setText("");
                 operacija = -1;
             }
             display.setText(display.getText() + "2" );
-        }else if(event.getSource() == tri){
+        }else if(event.getSource() == btn3){
             if(operacija == 0) {
                 display.setText("");
                 operacija = -1;
             }
             display.setText(display.getText() + "3" );
-        }else if(event.getSource() == cetiri){
+        }else if(event.getSource() == btn4){
             if(operacija == 0) {
                 display.setText("");
                 operacija = -1;
             }
             display.setText(display.getText() + "4" );
-        }else if(event.getSource() == pet){
+        }else if(event.getSource() == btn5){
             if(operacija == 0) {
                 display.setText("");
                 operacija = -1;
             }
             display.setText(display.getText() + "5" );
-        }else if(event.getSource() == sest) {
+        }else if(event.getSource() == btn6) {
             if(operacija == 0) {
                 display.setText("");
                 operacija = -1;
             }
             display.setText(display.getText() + "6");
-        }else if(event.getSource() == sedam){
+        }else if(event.getSource() == btn7){
             if(operacija == 0) {
                 display.setText("");
                 operacija = -1;
             }
             display.setText(display.getText() + "7" );
-        }else if(event.getSource() == osam){
+        }else if(event.getSource() == btn8){
             if(operacija == 0) {
                 display.setText("");
                 operacija = -1;
             }
             display.setText(display.getText() + "8" );
-        }else if(event.getSource() == devet){
+        }else if(event.getSource() == btn9){
             if(operacija == 0) {
                 display.setText("");
                 operacija = -1;
             }
             display.setText(display.getText() + "9" );
-        }else if(event.getSource() == nula){
+        }else if(event.getSource() == btn0){
             if(operacija == 0) {
                 display.setText("");
                 operacija = -1;
             }
             display.setText(display.getText() + "0" );
-        }else if(event.getSource() == tacka){
+        }else if(event.getSource() == dotBtn){
             if(operacija == 0) {
                 display.setText("");
                 operacija = -1;
             }
             display.setText(display.getText() + "." );
-        }else if(event.getSource() == jednako){
+        }else if(event.getSource() == equalsBtn){
             Float operand = Float.parseFloat(display.getText());
             if(operacija == 1){
                 rezultat += operand;
@@ -132,23 +132,23 @@ public class Controller {
                 display.setText(String.valueOf(rezultat));
             }
             operacija = 0;
-        }else if(event.getSource() == plus){
+        }else if(event.getSource() == plusBtn){
             rezultat = Float.parseFloat(display.getText());
             display.setText("");
             operacija = 1;
-        }else if(event.getSource() == minus){
+        }else if(event.getSource() == minusBtn){
             rezultat = Float.parseFloat(display.getText());
             display.setText("");
             operacija = 2;
-        }else if(event.getSource() == puta){
+        }else if(event.getSource() == timesBtn){
             rezultat = Float.parseFloat(display.getText());
             display.setText("");
             operacija = 3;
-        }else if(event.getSource() == podijeljeno){
+        }else if(event.getSource() == divideBtn){
             rezultat = Float.parseFloat(display.getText());
             display.setText("");
             operacija = 4;
-        }else if(event.getSource() == mod){
+        }else if(event.getSource() == modBtn){
             rezultat = Float.parseFloat(display.getText());
             display.setText("");
             operacija = 5;
